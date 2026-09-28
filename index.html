@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fff1f7">
+<title>Priti — A Little Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="passwordScreen" class="password-screen">
+  <div class="password-card">
+    <div class="password-heart">♡</div>
+    <span class="eyebrow">A PRIVATE LITTLE SPACE</span>
+    <h2>Something is waiting<br><em>for you.</em></h2>
+    <p>Enter the password to continue.</p>
+    <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off">
+    <button id="unlockBtn" class="primary-btn">Unlock ✦</button>
+    <div id="passwordError"></div>
+  </div>
+</div>
+
+<div id="loader" class="loader">
+  <div class="loader-card">
+    <div class="loader-heart">♡</div>
+    <p>Preparing a little surprise...</p>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<canvas id="particles"></canvas>
+<header class="topbar">
+  <div class="brand">Priti <span>✦</span></div>
+  <button id="musicBtn" class="icon-btn" aria-label="Toggle music">♪</button>
+</header>
+
+<main>
+<section class="hero section">
+  <div class="hero-glow"></div>
+  <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+  <h1>Hey, Priti.<br><em>There is something made just for you.</em></h1>
+  <p class="hero-text">Take your time. Explore every little corner.</p>
+  <button class="primary-btn" data-scroll="#journey">Start the surprise ✦</button>
+</section>
+
+<section id="journey" class="section">
+  <span class="eyebrow">THE LITTLE JOURNEY</span>
+  <h2>Some things are better discovered.</h2>
+  <div class="journey-grid">
+    <article class="journey-card reveal"><span>01</span><h3>A small beginning</h3><p>Every beautiful memory starts somewhere.</p></article>
+    <article class="journey-card reveal"><span>02</span><h3>Little moments</h3><p>The tiny moments often become the best ones.</p></article>
+    <article class="journey-card reveal"><span>03</span><h3>A special place</h3><p>Some memories deserve their own little space.</p></article>
+  </div>
+</section>
+
+<section class="section letter-section">
+  <div class="letter-wrap reveal">
+    <span class="eyebrow">OPEN WHEN YOU'RE READY</span>
+    <h2>A letter, just for you.</h2>
+    <div id="envelope" class="envelope">
+      <div class="env-flap"></div>
+      <div class="env-paper">
+        <h3>Dear Priti,</h3>
+        <p>Some people make ordinary days feel a little more special. This little website is simply a collection of thoughts, memories and smiles made especially for you.</p>
+        <p>Keep this tiny corner as a reminder that you are appreciated.</p>
+        <p class="signature">— From someone who wanted to make you smile ✦</p>
+      </div>
+      <button class="env-button primary-btn">Open</button>
+    </div>
+  </div>
+</section>
+
+<section class="section sky-section">
+  <span class="eyebrow">LOOK UP</span><h2>Find a little message.</h2>
+  <div class="sky">
+    <button class="star s1" data-message="You make ordinary moments brighter.">✦</button>
+    <button class="star s2" data-message="Some memories are worth keeping forever.">✦</button>
+    <button class="star s3" data-message="Keep smiling. It suits you.">✦</button>
+    <button class="star s4" data-message="This little space was made with care.">✦</button>
+    <div id="skyMessage">Tap a star ✦</div>
+  </div>
+</section>
+
+<section class="section gifts-section">
+  <span class="eyebrow">A LITTLE MYSTERY</span><h2>Choose one.</h2>
+  <div class="gift-grid">
+    <button class="gift-box" data-gift="A pocket full of happy memories ✦"><span>?</span></button>
+    <button class="gift-box" data-gift="A reminder to keep smiling ♡"><span>?</span></button>
+    <button class="gift-box" data-gift="One very special surprise ✿"><span>?</span></button>
+  </div>
+  <p id="giftResult" class="result-text">Your surprise will appear here.</p>
+</section>
+
+<section class="section memories-section">
+  <span class="eyebrow">I Like You</span><h2>Some Things I Like</h2>
+  <p class="section-note"></p>
+  <div class="polaroids">
+    <div class="polaroid p1 reveal"><img src="assets/photo1.jpg" alt="Memory 1"><p>Colour</p></div>
+    <div class="polaroid p2 reveal"><img src="assets/photo2.jpg" alt="Memory 2"><p>Rose</p></div>
+    <div class="polaroid p3 reveal"><img src="assets/photo3.jpg" alt="Memory 3"><p>Person</p></div>
+    <div class="polaroid p4 reveal"><img src="assets/photo4.jpg" alt="Memory 4"><p>Waiting..</p></div>
+  </div>
+</section>
+
+<section class="section final-section">
+  <div class="final-card reveal">
+    <span class="eyebrow">THE FINAL SURPRISE</span><h2>One last thing...</h2>
+    <p id="finalMessage">I Love You💖</p>
+    <button id="celebrateBtn" class="primary-btn">Reveal ✦</button>
+  </div>
+</section>
+</main>
+
+<audio id="bgMusic" loop preload="auto"><source src="assets/music.mp3" type="audio/mpeg"></audio>
+<footer>Made as a little surprise for Priti ✦</footer>
+<script src="script.js"></script>
+</body>
+</html>
